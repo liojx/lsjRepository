@@ -7,6 +7,8 @@ public class Digo {
 	private final String BIG_DOG_NAME = "blackApple";
 	
 	private String name = BIG_DOG_NAME;
+	
+	private String namw = "JD";
 
 	public String getName() {
 		return name;
