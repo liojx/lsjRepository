@@ -15,5 +15,17 @@ public class App
             System.out.println(a);
         }
         System.out.println("aaaa");
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
+        System.out.println(334);
     }
 }
