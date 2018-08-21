@@ -8,8 +8,6 @@ public class HitService {
 	
 	public String hit(String name) {
 		System.out.println("hit one peace-->"+name);
-		System.out.println(123);
-		System.out.println(123);
 		return "hit one peace-->"+name;
 	}
 }
