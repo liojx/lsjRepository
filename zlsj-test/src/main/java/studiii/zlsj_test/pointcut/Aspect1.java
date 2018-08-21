@@ -14,30 +14,30 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class Aspect1 {
 
-	@Before(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()") // ？？
-	public void before(JoinPoint joinPoint) {
-		System.out.println("[Aspect1] 在建言之前");
-	}
+    @Before(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()") // ？？
+    public void before(JoinPoint joinPoint) {
+        System.out.println("[Aspect1] 在建言之前");
+    }
 
-	@Around(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()") // ？？？
-	public void around(ProceedingJoinPoint pjp) throws Throwable {
-		System.out.println("[Aspect1] around advise 1");
-		pjp.proceed();
-		System.out.println("[Aspect1] around advise 2");
-	}
+    @Around(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()") // ？？？
+    public void around(ProceedingJoinPoint pjp) throws Throwable {
+        System.out.println("[Aspect1] around advise 1");
+        pjp.proceed();
+        System.out.println("[Aspect1] around advise 2");
+    }
 
-	@AfterReturning(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
-	public void afterReturning(JoinPoint joinPoint) {
-		System.out.println("[Aspect1] afterReturning advise");
-	}
+    @AfterReturning(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
+    public void afterReturning(JoinPoint joinPoint) {
+        System.out.println("[Aspect1] afterReturning advise");
+    }
 
-	@AfterThrowing(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
-	public void afterThrowing(JoinPoint joinPoint) {
-		System.out.println("[Aspect1] afterThrowing advise");
-	}
+    @AfterThrowing(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
+    public void afterThrowing(JoinPoint joinPoint) {
+        System.out.println("[Aspect1] afterThrowing advise");
+    }
 
-	@After(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
-	public void after(JoinPoint joinPoint) {
-		System.out.println("[Aspect1] after advise");
-	}
+    @After(value = "studiii.zlsj_test.pointcut.PointCuts.aopDemo()")
+    public void after(JoinPoint joinPoint) {
+        System.out.println("[Aspect1] after advise");
+    }
 }
